@@ -40,7 +40,7 @@ import {ROUTER_DIRECTIVES, RouteConfig, Router} from 'angular2/router';
     },
     {
         path: "/crear-pelicula/:titulo", 
-        name:"CrearPeliculaBasadaEnOtroa",
+        name:"CrearPeliculaBasadaEnOtroaa",
         component: CrearPeliculaComponent 
     },
     
