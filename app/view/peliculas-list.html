@@ -1,0 +1,22 @@
+<h1>{{titulo}} con Angular 2 !! victorroblesweb.es</h1>
+<p>{{datoServicio}}</p>
+<p>Pelicula favorita:</p>
+
+<button (click)="onShowHide(true)" [class.showingData]="mostrarDatos===true">Mostrar Datos</button>
+<button (click)="onShowHide(false)" [class.showingData]="mostrarDatos===false">Ocultar Datos</button>
+<ul *ngIf ="mostrarDatos===true">
+    <li>Título: {{pelicula.titulo}}</li>
+    <li>Director: {{pelicula.director}}</li>
+    <li>Año: {{pelicula.anio}}</li>
+</ul>
+<input type = "text" [(ngModel)]="pelicula.titulo">
+<hr>
+<p>Listado pelicula</p>
+<ul>
+	<ul *ngFor="#pelicula of peliculas" style="margin-bottom:20px">
+	    <li (click)="onCambiarPelicula(pelicula)" class="pelicula-title" [class.clicked]="pelicula.titulo==peliculaElegida.titulo">Título: {{pelicula.titulo}}</li>
+	    <li>Director: {{pelicula.director}}</li>
+	    <li *ngIf="pelicula.anio">Año: {{pelicula.anio}}</li>
+        <li><a [routerLink]="['CrearPeliculaBasadaEnOtro',{titulo: pelicula.titulo}]">Añadir pelicula basada en esta</a></li>
+    </ul>
+</ul>

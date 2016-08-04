@@ -1,0 +1,22 @@
+h1{
+	font-family: Arial, Helvetica;
+	color: #444;
+
+}
+.showingdata{
+	display: none;
+}
+.footer{
+	background-color: silver;
+}
+.pelicula-title{
+	cursor: pointer;
+}
+.pelicula-title:hover{
+	text-decoration: underline;
+}
+.clicked{
+	font-size: 20px;
+	color:green;
+	font-family: Arial;
+}
