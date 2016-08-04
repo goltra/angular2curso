@@ -9,8 +9,8 @@ export class PeliculasService{
 		return PELICULAS;
 	}
 	insertPelicula(pelicula: Pelicula){
-		//Promise.resolve(PELICULAS).then((peliculas: Pelicula[])=>peliculas.push(pelicula));
-		PELICULAS.push(pelicula);
+		Promise.resolve(PELICULAS).then((peliculas: Pelicula[])=>peliculas.push(pelicula));
+		//PELICULAS.push(pelicula);
 	}
 
 }

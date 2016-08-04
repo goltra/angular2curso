@@ -39,8 +39,8 @@ import {ROUTER_DIRECTIVES, RouteConfig, Router} from 'angular2/router';
         component: CrearPeliculaComponent 
     },
     {
-        path: "/crear-pelicula/:titulo", 
-        name:"CrearPeliculaBasadaEnOtroaaa",
+        path: "/crear-pelicula/:titulo/:director/:anio", 
+        name:"CrearPeliculaBasadaEnOtro",
         component: CrearPeliculaComponent 
     },
     

@@ -68,8 +68,8 @@ System.register(['angular2/core', './components/peliculas-list.component', './co
                             component: crear_pelicula_component_1.CrearPeliculaComponent
                         },
                         {
-                            path: "/crear-pelicula/:titulo",
-                            name: "CrearPeliculaBasadaEnOtroaaa",
+                            path: "/crear-pelicula/:titulo/:director/:anio",
+                            name: "CrearPeliculaBasadaEnOtro",
                             component: crear_pelicula_component_1.CrearPeliculaComponent
                         },
                     ]), 
